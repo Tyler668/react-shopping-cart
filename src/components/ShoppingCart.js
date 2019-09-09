@@ -8,7 +8,7 @@ import { fromEventPattern } from 'rxjs';
 
 const ShoppingCart = () => {
 
-	const {cart, setCart} = useContext(CartContext);
+	const cart = useContext(CartContext);
 
 	const getCartTotal = () => {
 		return cart.reduce((acc, value) => {
