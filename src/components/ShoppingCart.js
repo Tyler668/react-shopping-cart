@@ -2,8 +2,8 @@ import React from 'react';
 
 // Components
 import Item from './ShoppingCartItem';
-import {CartContext} from '../contexts/CartContext';
-import {useContext} from 'react';
+import { CartContext } from '../contexts/CartContext';
+import { useContext } from 'react';
 import { fromEventPattern } from 'rxjs';
 
 const ShoppingCart = () => {
@@ -21,7 +21,6 @@ const ShoppingCart = () => {
 			{cart.map(item => (
 				<Item key={item.id} {...item} />
 			))}
-
 			<div className="shopping-cart__checkout">
 				<p>Total: ${getCartTotal()}</p>
 				<button>Checkout</button>
@@ -29,5 +28,6 @@ const ShoppingCart = () => {
 		</div>
 	);
 };
+
 
 export default ShoppingCart;
