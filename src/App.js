@@ -27,9 +27,9 @@ function App() {
 			  i--;
 			}
 		 }
-		 console.log('new cart',newCart);
-		setCart(newCart);
-		console.log('cart', cart);
+		 
+		setCart([...newCart]);
+		
 	}
 
 	return (
