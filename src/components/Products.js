@@ -3,9 +3,9 @@ import React from 'react';
 // Components
 import Product from './Product';
 import { useContext } from 'react';
-import ProductContext from '../contexts/ProductContext';
+import {ProductContext} from '../contexts/ProductContext';
 
-const Products = props => {
+const Products = () => {
 	const {products, addItem} = useContext(ProductContext);
 
 	return (
